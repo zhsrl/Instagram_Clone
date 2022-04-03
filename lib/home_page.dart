@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   void _navigateBottomBar(int index){
 
     setState(() {
-      index = _selectedIndex;
+      _selectedIndex = index;
     });
 
   }

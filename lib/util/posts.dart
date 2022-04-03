@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 class Posts extends StatelessWidget {
 
   final String name;
+  final String postText;
 
-  const Posts({required this.name});
+  const Posts({required this.name, required this.postText});
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         
@@ -71,7 +73,30 @@ class Posts extends StatelessWidget {
               Icon(Icons.bookmark_outline)
             ],
           ),
-        )
+        ),
+
+         Padding(
+           
+           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+           child: RichText(
+             
+              text: TextSpan(
+                style: TextStyle(color: Colors.black),
+                children: [
+                   TextSpan(
+                    text: name, 
+                    style: TextStyle(
+                  fontWeight: FontWeight.bold
+                  ),),
+
+
+
+                  TextSpan(
+                    text: ' ' + postText)
+                ]
+              ) 
+            ),
+         ),
       ],
     );
   }

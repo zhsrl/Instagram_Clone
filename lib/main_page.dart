@@ -11,7 +11,14 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
 
-  final List<String> people = ['Ваша история', 'aikumis', 'aqyqat', 'melomenemes', 'avaya_gift', 'yeskendir', 'zukerberg'];
+  final List<String> people = ['zhasarall', 'aikumis', 'aqyqat', 'melomenemes', 'avaya_gift', 'yeskendir', 'zukerberg'];
+  final List<String> postText = ['Have a nice day!', 
+  'For norland produce age wishing', 
+  ' To figure on it spring season up', 
+  'Certainty determine at of arranging perceived situation or',
+  'r wholly pretty county in oppose',
+  'Give lady of they such they sure it',
+  'Me contained explained my education'];
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +61,7 @@ class _MainPageState extends State<MainPage> {
           // Posts
           Expanded(
             child: ListView.builder(itemCount: people.length, itemBuilder: (BuildContext context, int index) {
-                return Posts(name: people[index]);
+                return Posts(name: people[index], postText: postText[index],);
               },
             ),
           )
