@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RecommendedGrid extends StatelessWidget {
+
   const RecommendedGrid({Key? key}) : super(key: key);
 
   @override
@@ -14,5 +15,8 @@ class RecommendedGrid extends StatelessWidget {
           child: Container(color: Colors.red[200])
         );
       });
+
+      
   }
+
 }
