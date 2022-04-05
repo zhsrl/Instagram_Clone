@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(icon: Icon(Icons.video_call), label: 'reels'),
             BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'shop'),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'profile'),
+            BottomNavigationBarItem(icon: Icon(Icons.warning), label: 'exception')
           ],
         )
     );
